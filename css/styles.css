@@ -127,7 +127,9 @@ button {
 }
 
 .contact-link {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   padding: 32px 0;
   font-weight: 500;
   line-height: 1.14;
@@ -140,10 +142,21 @@ button {
   color: var(--active-color);
 }
 
+.contact-icon {
+  fill: currentColor;
+}
+
 /* --------------------MAIN----------------------- */
 
 .hero {
+  min-width: 1600px;
+  margin: 0 auto;
   background-color: var(--bg-color-hero);
+  background-image: url(../images/hero-bg.jpg),
+    linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, center;
+  background-size: cover, cover;
   padding: 200px 0;
   text-align: center;
 }
@@ -201,6 +214,17 @@ button {
   width: 270px;
 }
 
+.features-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f4fa;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
 .features-title {
   margin-bottom: 10px;
   font-size: 14px;
@@ -239,6 +263,9 @@ button {
 .team-item {
   background-color: var(--bg-color-main);
   flex-basis: calc((100% - 90px) / 4);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-item-container {
@@ -258,6 +285,69 @@ button {
   line-height: calc(19 / 16);
   text-align: center;
   color: var(--text-color);
+  margin-bottom: 16px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--bg-color-main);
+  color: #afb1b8;
+}
+
+.socials-link:hover,
+.socials-link:focus {
+  background-color: var(--active-color);
+  color: var(--bg-color-main);
+}
+
+.socials-icon {
+  fill: currentColor;
+}
+
+.clients {
+}
+.clients-list {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.clients-item {
+}
+
+.clients-link {
+  color: #afb1b8;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--active-color);
+}
+
+.clients-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+}
+
+.clients-icon {
+  fill: currentColor;
 }
 
 /* -------------------------FOOTER--------------------------- */
@@ -265,6 +355,12 @@ button {
 .footer {
   background-color: var(--bg-color-hero);
   padding: 60px 0;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  gap: 70px;
 }
 
 .footer .logo {
@@ -299,6 +395,31 @@ button {
   color: var(--active-color);
 }
 
+.join-text {
+  font-weight: 700;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--bg-color-main);
+  margin-bottom: 20px;
+}
+
+.footer-socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--bg-color-main);
+}
+
+.footer-socials-link:hover,
+.footer-socials-link:focus {
+  background-color: var(--active-color);
+}
+
 /* PORTFOLIO */
 
 .buttons-list {
@@ -326,6 +447,8 @@ button {
 .portfolio-button:focus {
   background-color: var(--active-color);
   color: var(--bg-color-main);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-list {
@@ -337,6 +460,12 @@ button {
 .portfolio-item {
   flex-basis: calc((100% - 60px) / 3);
   border: 1px solid #eeeeee;
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-item-container {
