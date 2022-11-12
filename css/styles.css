@@ -149,11 +149,14 @@ button {
 /* --------------------MAIN----------------------- */
 
 .hero {
-  min-width: 1600px;
+  max-width: 1600px;
   margin: 0 auto;
   background-color: var(--bg-color-hero);
-  background-image: url(../images/hero-bg.jpg),
-    linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-bg.jpg);
   background-repeat: no-repeat, no-repeat;
   background-position: center, center;
   background-size: cover, cover;
@@ -316,27 +319,14 @@ button {
   fill: currentColor;
 }
 
-.clients {
-}
 .clients-list {
   display: flex;
   align-items: center;
   gap: 30px;
 }
 
-.clients-item {
-}
-
 .clients-link {
   color: #afb1b8;
-}
-
-.clients-link:hover,
-.clients-link:focus {
-  color: var(--active-color);
-}
-
-.clients-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -344,6 +334,11 @@ button {
   height: 92px;
   border: 1px solid currentColor;
   border-radius: 4px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--active-color);
 }
 
 .clients-icon {
@@ -359,7 +354,7 @@ button {
 
 .footer-container {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   gap: 70px;
 }
 
